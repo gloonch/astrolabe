@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06), transparent 25%),
+    radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.04), transparent 30%),
+    #0a0a0f;
+}
+
+body {
+  @apply text-slate-100;
+  font-family: 'Share Tech Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 40% 0%, rgba(255, 255, 255, 0.07), transparent 22%),
+    #0a0a0f;
+  background-size: 40px 40px, 40px 40px, auto, auto;
+}
+
+.pixel-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  border: 2px solid #e8e8ed;
+  box-shadow: 0 0 0 2px #0a0a0f, 4px 4px 0 0 #e8e8ed;
+}
+
+.pixel-button {
+  @apply uppercase tracking-widest;
+  font-family: 'Press Start 2P', cursive;
+  box-shadow: 0 0 0 2px #0a0a0f, 3px 3px 0 0 #e8e8ed;
+  transition: transform 80ms ease, box-shadow 80ms ease;
+  background: #f8f8f8;
+  color: #111;
+}
+
+.pixel-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 2px #0a0a0f, 1px 1px 0 0 #e8e8ed;
+}
+
+.glow-text {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.35);
+}
